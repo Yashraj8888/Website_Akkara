@@ -1,0 +1,51 @@
+/* -------------------------------contact--------------------------------------- */
+
+.input-contactus input::placeholder,
+.input-contactus textarea::placeholder {
+    font-family: 'Abel', sans-serif;
+}
+
+.input-contactus {
+    margin: 15px 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-contactus label {
+    font-family: 'Abel', sans-serif;
+    color: black;
+}
+
+.input-contactus input,
+.input-contactus textarea {
+    width: 100%;
+    padding: 7px 7px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    width: 40%;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('../pexels-kampus-production-8507625.jpg') no-repeat center center/cover;
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ----------------x---------------contact----------------x----------------------- */
