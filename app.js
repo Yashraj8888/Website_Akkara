@@ -88,6 +88,22 @@ app.get('/events', (req, res) => {
 
     res.render('event.ejs');
 });
+app.get('/initiative', (req, res) => {
+
+    res.render('initiative.ejs');
+});
+app.get('/members', (req, res) => {
+
+    res.render('members.ejs');
+});
+app.get('/blogs', (req, res) => {
+
+    res.render('blogs.ejs');
+});
+app.get('/blogContent', (req, res) => {
+
+    res.render('blogContent.ejs');
+});
 
 // START THE SERVER
 app.listen(port, () => {

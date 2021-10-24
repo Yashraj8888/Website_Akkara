@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Akkara Members Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font family link -->
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@100&family=Lexend+Deca&family=Livvic:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* ---------------------------navbar----------------------------- */
+        /* ---------------------------universal----------------------------- */
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            margin: 40px;
+            color: black;
+            font-size: 1.5rem;
+            font-family: 'Lexend Deca', sans-serif;
+            padding: 10px 10px;
+            border-radius: 30px;
+            background-color: #b3ebef;
+            width: 170px;
+            border: 1px solid transparent;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            /* color: white; */
+            border: 2px solid white;
+        }
+        
+        .blog .container {
+            margin: 10px 10px;
+            margin-left: 47px;
+        }
+        /* --------------X-------------universal------------X----------------- */
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            /* overflow: hidden; */
+            overscroll-behavior-x: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .nav {
+            background-color: #ffffff73;
+            color: black;
+            position: sticky;
+            top: 0px;
+            z-index: 4;
+        }
+        
+        .nav .nav-brand a {
+            font-size: 1.5rem;
+            padding: 5px 5px;
+            position: relative;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        
+        .nav .nav-brand {
+            margin-left: 10px;
+        }
+        
+        .nav .nav-brand img {
+            height: 70px;
+            width: 90px;
+        }
+        
+        .nav .nav-items {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+        }
+        
+        .nav .nav-items .nav-links {
+            font-size: 1.1rem;
+            margin: 0px 0px;
+            padding: 20px 0px;
+            font-family: 'Abel', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .nav .nav-items .nav-links:hover {
+            background-color: skyblue;
+            color: white;
+        }
+        
+        .nav .nav-items .nav-links a:hover {
+            color: white;
+            font-weight: bold;
+        }
+        
+        .nav .nav-items .nav-links a {
+            padding: 34px 20px;
+            text-decoration: none;
+        }
+        
+        .nav .nav-menu {
+            justify-content: space-between;
+        }
+        
+        .nav .social-items {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+        
+        .nav .social-items img {
+            height: 20px;
+            width: 20px;
+            margin-top: 9px;
+        }
+        
+        .nav .social-items a {
+            margin: 5px 5px;
+            padding: 5px 5px;
+        }
+        
+        .nav .social-items a:hover {
+            color: #8790b1;
+        }
+        
+        .openmenu {
+            display: none;
+            color: white;
+        }
+        
+        .closemenu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: none;
+        }
+        
+        .hi {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        body {
+            font-family: "Marck Script", serif;
+            background-image: url('../static/source/background_5.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        /* Style the header */
+        
+        #heading {
+            font-family: 'Carattere', cursive;
+        }
+        
+        header {
+            padding: 1.5vw;
+            text-align: center;
+            font-size: 4.7vw;
+            color: rgb(44, 48, 46);
+        }
+        /* footer {
+            padding: 2vw;
+            border: 2vw;
+            text-align: center;
+            color: rgb(23, 24, 23);
+            font-size: 2vw;
+            font-family: "Marck Script", serif;
+            background-color: grey;
+        }
+         */
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create four equal columns that sits next to each other */
+        
+        .column img {
+            vertical-align: middle;
+            width: 100%;
+        }
+        
+        .column {
+            -ms-flex: 18vw;
+            /* IE10 */
+            flex: 18vw;
+            max-width: 18vw;
+            padding: 0, 4px;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        #logo {
+            padding-bottom: 0;
+            width: 17vw;
+            height: 12vw;
+            border: none;
+        }
+        
+        .fa {
+            padding: 0.5vw;
+            font-size: 1.3vw;
+            width: 3vw;
+            text-align: center;
+            text-decoration: none;
+            margin: 0.26vw 0.26vw;
+            border-radius: 35%;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            color: black;
+        }
+        
+        .fa-twitter {
+            color: black;
+        }
+        
+        .fa-linkedin {
+            color: black;
+        }
+        
+        .fa-youtube {
+            color: black;
+        }
+        
+        .fa-instagram {
+            color: black;
+        }
+        
+        section {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        /* .topnav {
+            overflow: hidden;
+            background-color: rgb(250, 248, 248);
+        } */
+        /* .topnav a {
+            float: left;
+            color: #1d1b1b;
+            text-align: center;
+            padding: 1vw, 4vw;
+            text-decoration: none;
+            font-size: 1.5vw;
+            font-family: "Teko";
+        } */
+        /* .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        } */
+        /* .topnav a.active {
+            background-color: silver; 
+            color: white;
+        }  */
+        
+        a {
+            text-decoration: none;
+            /* display: inline-block; 
+             padding: 1vw 3vw; */
+        }
+        /* a:hover {
+            background-color: #ddd;
+            color: black;
+        } */
+        
+        .card {
+            box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+            max-width: 16vw;
+            margin: auto;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-bottom: 1vw;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        h1 {
+            font-size: 1.4vw;
+        }
+        
+        p {
+            font-size: 1vw;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 1.3vw;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 1vw;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 5vw;
+        }
+        
+        a {
+            text-decoration: none;
+            /* font-size: 5vw; 
+            color: black; */
+        }
+        
+        .subheading {
+            font-family: 'Zen Tokyo Zoo', cursive;
+            text-align: center;
+            font-size: 3.6vw;
+            color: black(219, 62, 154);
+            margin: 50px;
+        }
+        
+        .domain {
+            font-family: 'Gemunu Libre';
+            text-align: center;
+            font-size: 3vw;
+            color: black(219, 62, 154);
+        }
+        
+        .row {
+            margin: auto;
+        }
+        
+        .special {
+            visibility: hidden;
+        }
+        /* footer {
+            padding: 2vw;
+            border: 2vw;
+            text-align: center;
+            color: rgb(23, 24, 23);
+            font-size: 3vw;
+            font-family: "Marck Script", serif;
+            background-color: rgb(112, 109, 109, 0.5)
+        } */
+        /* -----------------------------footer-------------------------------------- */
+        
+        .footer .form-element .btn {
+            margin-top: 40px;
+            margin-left: 60px;
+        }
+        
+        .footer .form-element .btn:hover {
+            color: white;
+        }
+        
+        .footer {
+            height: 100%;
+            background: black;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .footer .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .footer .container>div {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 4rem .9rem;
+        }
+        
+        .footer .container h2 {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .footer .newsletter .form-element {
+            background: black;
+            display: inline-block;
+        }
+        
+        .footer .newsletter .form-element input {
+            padding: .5rem .7rem;
+            border: none;
+            background: transparent;
+            color: white;
+            font-family: var(--Josefin);
+            font-size: 1rem;
+            width: 74%;
+        }
+        
+        .footer .newsletter .form-element span {
+            background: skyblue;
+            padding: .5rem .7rem;
+            cursor: pointer;
+        }
+        
+        .footer .instagram div>img {
+            display: inline-block;
+            width: 25%;
+            height: 50%;
+            margin: .3rem .4rem;
+        }
+        
+        .footer .follow div i {
+            color: white;
+            padding: 0 .4rem;
+        }
+        
+        .footer .rights {
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .footer .rights h4 a {
+            color: white;
+        }
+        
+        .footer .move-up {
+            position: absolute;
+            right: 6%;
+            top: 50%;
+        }
+        
+        .footer .move-up span {
+            color: midnightblue;
+        }
+        
+        .footer .move-up span:hover {
+            color: white;
+            cursor: pointer;
+        }
+        
+        .footer p {
+            color: grey;
+            margin-top: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .footer h4 {
+            color: grey;
+        }
+        
+        .social-items img {
+            height: 20px;
+            width: 20px;
+            margin-top: 9px;
+            margin-right: 4px;
+        }
+        /*              Viewport less then or equal to 1130px            */
+        
+        @media only screen and (max-width: 1130px) {
+            .site-content .post-content>.post-image .post-info {
+                left: 2rem !important;
+                bottom: 1.2rem !important;
+                border-radius: 0% !important;
+            }
+            .site-content .sidebar .popular-post .post-info {
+                display: none !important;
+            }
+            footer.footer .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .instagram {
+                display: none;
+            }
+        }
+        /*      x       Viewport less then or equal to 1130px    x     */
+        /*              Viewport less then or equal to 750px            */
+        
+        @media only screen and (max-width: 750px) {
+            .nav .nav-menu,
+            .nav .nav-items {
+                flex-direction: column;
+            }
+            .nav .toggle-collapse {
+                display: initial;
+            }
+            main .site-content {
+                grid-template-columns: 100%;
+            }
+            footer.footer .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .instagram {
+                display: none;
+            }
+        }
+        /*        x      Viewport less then or equal to 750px       x     */
+        /*              Viewport less then or equal to 520px            */
+        
+        @media only screen and (max-width: 520px) {
+            main .blog {
+                height: 125vh;
+            }
+            .site-content .post-content>.post-image .post-info {
+                display: none;
+            }
+            footer.footer .container>div {
+                padding: 1rem .9rem !important;
+            }
+            footer .rights {
+                padding: 0 1.4rem;
+                text-align: center;
+            }
+            nav .toggle-collapse {
+                width: 80% !important;
+            }
+            .instagram {
+                display: none;
+            }
+        }
+        /*        x      Viewport less then or equal to 520px       x     */
+        /* ---------x------- Footer ----------x---------- */
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <div>
+            <img src="../static/logo.png" id="logo">
+            <h2 id="heading">Our Members</h2>
+        </div>
+    </header>
+    <div class="topnav">
+        <a class="active" href="#home">Members</a>
+        <a href="/">Home page</a>
+        <a href="/contact">Contact</a>
+    </div>
+    </br> -->
+
+    <!-- -----------------------navbar---------------------------- -->
+
+    <nav class="nav vis-nav">
+        <div class="nav-menu flex-row">
+
+            <div class="openmenu"><i class="fas fa-bars"></i></div>
+
+            <div class="nav-brand">
+                <a href="#" class="text-grey"><img src="../static/logo.png" alt="" srcset=""></a>
+            </div>
+
+            <ul class="nav-items vis-items">
+                <li class="nav-links"><a href="/">Home</a></li>
+                <li class="nav-links"><a href="/events">Events</a></li>
+                <!-- <li class="nav-links"><a href="/blogs">Blogs</a></li> -->
+                <!-- <li class="nav-links"><a href="/initiative">Our Initiatives</a></li> -->
+                <li class="nav-links"><a href="/members">Members</a></li>
+                <li class="nav-links"><a href="/contact">Contact Us</a></li>
+            </ul>
+
+            <div class="closemenu"><i class="fas fa-times"></i></div>
+
+            <div class="social-menu vis-socials">
+                <ul class="social-items">
+                    <a href="https://www.instagram.com/akkara_nitt/"><img src="../static/instagram.png"></a>
+                    <a href="https://m.facebook.com/AkkaraIG/"><img src="../static/facebook.png"></a>
+                    <a href="https://youtube.com/channel/UCoC-Un_SZmiJrLTJ2maYuDg"><img src="../static/youtube.png"></a>
+                    <a href="https://www.linkedin.com/company/akkara"><img src="../static/linkedin.png"></a>
+
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- -------------X----------navbar----------X------------------ -->
+    <p>
+        <h3 class="subheading">CORE 20 - 21</h3>
+    </p>
+
+    </br>
+    <section>
+        <article>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="../static/source/president.jpg" alt="Pasindu" style="height: 13vw;width:100%; ">
+                        <h1>Pasindu</h1>
+                        <p class="title ">President</p>
+                        <p>Our pillar of Support!</p>
+                        <p>EEE</p>
+                        <div>
+                            <a href="# " target="_blank" class="fa fa-facebook "></a>
+                            <a href="# " target="_blank" class="fa fa-instagram "></a>
+                            <a href="# " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="../static/source/overall-coordinator.jpg" alt="Mourrya" style="height: 13vw;width:100%; ">
+                        <h1>Mourrya Muppana</h1>
+                        <p class="title ">Overall Coordinator</p>
+                        <p>Our encouragement :)</p>
+                        <p>EEE</p>
+                        <div>
+                            <a href="https://www.instagram.com/mourrya_muppana/" target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/mourrya-muppana-660a1617b" target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="../static/source/vice_president.jpg" alt="Saravana" style="height: 13vw;width:100%; ">
+                        <h1>Saravana Kumar S</h1>
+                        <p class="title ">Vice President</p>
+                        <p>Keeps us on our Toes.</p>
+                        <p>Mech</p>
+                        <div class="special">
+                            <a href="# " class="fa fa-facebook "></a>
+                            <a href="# " class="fa fa-instagram "></a>
+                            <a href="# " class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Treasurer.jpg " alt="Abhinarayani " style="height: 13vw;width:100%; ">
+                        <h1>Abhinarayani V</h1>
+                        <p class="title ">Treasurer</p>
+                        <p>Wonderful Mentor :}</p>
+                        <p>EEE</p>
+                        <div>
+                            <a href="https://www.facebook.com/abhinarayani.v.94" target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/abhinarayani_v/" target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/abhinarayani-v-6a5016195 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Head_External_affairs.jpg " alt="Vignesh " style="height: 13vw;width:100%; ">
+                        <h1>V Sai Vignesh</h1>
+                        <p class="title ">Head, External Affairs</p>
+                        <p>Our point of Contact</p>
+                        <p>ECE</p>
+                        <div>
+                            <a href="https://m.facebook.com/100004751505200/ " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/sai_vignesh_idk/ " target="_blank" class="fa fa-instagram "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+            </div>
+            </br>
+            <p>
+                <h3 class="subheading ">INDUCTEES 20 - 21</h3>
+            </p>
+
+            <div class="row ">
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Yashraj_webdev.jpg" alt="Yashraj " style="height: 13vw;width:100%; ">
+                        <h1>Yashraj Pathak</h1>
+                        <p class="title ">Web Developer</p>
+                        <p>ICE</p>
+                        <div>
+                            <a href="#https://www.instagram.com/yashraaj__/  " target="_blank" class="fa fa-facebook "></a>
+                            <a href="#https://www.instagram.com/yashraaj__/  " target="_blank" class="fa fa-instagram "></a>
+                            <a href="#https://www.linkedin.com/in/yashraj-pathak-759040201/ " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Hensiha_webdev.jpg " alt="Hensiha " style="height: 13vw;width:100%; ">
+                        <h1> Hensiha Arulmani</h1>
+                        <p class="title ">Web Developer</p>
+                        <p>ECE</p>
+                        <div>
+                            <a href="https://www.instagram.com/hensiha/ " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/hensiha/ " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Chandana_webdev.jpg " alt="Chandana " style="height: 13vw;width:100%; ">
+                        <h1> Chandana S</h1>
+                        <p class="title ">Web Developer</p>
+                        <p>ECE</p>
+                        <div>
+                            <a href="https://www.instagram.com/chandana._reddy_/ " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/chandana-reddy-2a0175212/ " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Uday_kiran_design.jpg " alt="Uday Kiran " style="height: 13vw;width:100%; ">
+                        <h1> Uday Kiran</h1>
+                        <p class="title ">Designer</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.instagram.com/karriudaykiran09/" target="_blank" class="fa fa-instagram "></a>
+                            <a href="# " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Uday_charan_design.jpg " alt="Uday charan " style="height: 13vw;width:100%; ">
+                        <h1>Uday Charan </h1>
+                        <p class="title ">Designer</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.facebook.com/udaycharan.cena.7" target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://instagram.com/uday_never_settles?utm_medium=copy_link " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/uday-charan-82479b218 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Nagavalli_chatla_content.jpg " alt="Nagavalli chatla " style="height: 13vw;width:100%; ">
+                        <h1> HRSS Nagavalli Chatla</h1>
+                        <p class="title ">Content</p>
+                        <p>EEE</p>
+                        <div>
+                            <a href="https://www.instagram.com/hrssnagavalli?r=nametag " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/nagavalli-chatla-b53175213 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Shankar_content.jpg" alt="Shankar " style="height: 13vw;width:100%; ">
+                        <h1> Shankar K</h1>
+                        <p class="title ">Content</p>
+                        <p>ICE</p>
+                        <div>
+                            <a href="https://www.facebook.com/kethavath.shankar.777 " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/invites/contact/?i=12q1jxkb81hj1&utm_content=6zp0fh9 " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/shankar-k-527a01212 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/chittash_webdev.jpg " alt="Chittash " style="height: 13vw;width:100%; ">
+                        <h1> Chittash K</h1>
+                        <p class="title ">Research</p>
+                        <p>Production</p>
+                        <div>
+                            <a href="https://www.facebook.com/chittash.krish " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://instagram.com/chittashkrish?utm_medium=copy_link " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/chittash-k-9145111b8" target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Abinaya_research.jpg " alt="Abinaya " style="height: 13vw;width:100%; ">
+                        <h1> Abinaya J</h1>
+                        <p class="title ">Research</p>
+                        <p>EEE</p>
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100008394787336" target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/_abinaya_j_/ " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/abinaya-j-2ab8911a1/" target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Bency_research.jpg " alt="Bency " style="height: 13vw;width:100%; ">
+                        <h1>Bency Vinse V R</h1>
+                        <p class="title ">Research</p>
+                        <p>Mech</p>
+                        <div>
+                            <a href="# " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/bency__vinse/ " target="_blank" class="fa fa-instagram "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Gokul_krishnan_research.jpg " alt="Gokul " style="height: 13vw;width:100%; ">
+                        <h1> Gokul Krishnan A</h1>
+                        <p class="title ">Research</p>
+                        <p>Mech</p>
+                        <div>
+                            <a href="# " target="_blank" class="fa fa-facebook "></a>
+                            <a href="# " target="_blank" class="fa fa-instagram "></a>
+                            <a href="# " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Deepika_research.jpg " alt="Deepika " style="height: 13vw;width:100%; ">
+                        <h1> Uj Deepika</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.instagram.com/_deepika_.09?r=nametag" target="_blank" class="fa fa-instagram "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Harshita_research.jpg" alt="Harshita " style="height: 13vw;width:100%; ">
+                        <h1> Harshitha S</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.facebook.com/harshitha.reddy.94695459 " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/invites/contact/?i=12j3vo2qzicqs&utm_content=kjdr05g" target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/harshitha-reddy-23062621a" target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Mukesh_research.jpg " alt="Mukesh " style="height: 13vw;width:100%; ">
+                        <h1> A mukesh sundar</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="# " target="_blank" class="fa fa-facebook "></a>
+                            <a href="# " target="_blank" class="fa fa-instagram "></a>
+                            <a href="# " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Siddadha_varma_research.jpg " alt="Siddardha varma " style="height: 13vw;width:100%; ">
+                        <h1> Siddardha varma</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.facebook.com/vuppala.siddardhavarma " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/siddardha_vuppala?r=nametag " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/vuppala-siddardha-varma-137640218 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Rayipalli_madhu_research.jpg " alt="Rayipalli " style="height: 13vw;width:100%; ">
+                        <h1>Rayipalli Madhu</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.instagram.com/rayipallimadhu333/ " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/madhu-rayipalli-44111021a" target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Sabari_sriram_research.jpg " alt="Sabari " style="height: 13vw;width:100%; ">
+                        <h1> Sabari Sriram S</h1>
+                        <p class="title ">Research</p>
+                        <p>ECE</p>
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100072268419198 " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/sabari_22sriram?r=nametag " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/sabari-sriram-s-714811210 " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Hashvitha_research.jpg " alt="Hashvita " style="height: 13vw;width:100%; ">
+                        <h1> Hashvitha R</h1>
+                        <p class="title ">Research</p>
+                        <p>Production</p>
+                        <div>
+                            <a href="https://www.instagram.com/_.hashvitha._?r=nametag " target="_blank" class="fa fa-instagram "></a>
+                            <a href="https://www.linkedin.com/in/hashvitha-rajkumar-22888817b " target="_blank" class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+                        <img src="../static/source/Harshavardhan_research.jpg " alt="Mukesh " style="height: 13vw;width:100%; ">
+                        <h1> Harshavardhan</h1>
+                        <p class="title ">Research</p>
+                        <p>Civil</p>
+                        <div>
+                            <a href="https://www.facebook.com/harsha.vardha.33 " target="_blank" class="fa fa-facebook "></a>
+                            <a href="https://www.instagram.com/harsha022002/ " target="_blank" class="fa fa-instagram "></a>
+                            <a href="# " class="fa fa-linkedin "></a>
+                        </div>
+                        <p><button></button></p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <!-- <footer>
+        <div>
+            <p style="font-size: 1.5vw;">Contact Us</p>
+            
+            <a href="https://m.facebook.com/AkkaraIG/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/akkara" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/channel/UCoC-Un_SZmiJrLTJ2maYuDg" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/akkara_nitt/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+
+    </footer>  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <!-- <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div> -->
+                <div class="form-element">
+                    <a href="/contact"><button class="btn">contact now</button></a>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="../static/assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="../static/assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="../static/assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="../static/assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="../static/assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="../static/assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <ul class="social-items">
+                    <a href="https://www.instagram.com/akkara_nitt/"><img src="../static/instagram (1).png"></a>
+                    <a href="https://m.facebook.com/AkkaraIG/"><img src="../static/facebook (1).png"></a>
+                    <a href="https://www.linkedin.com/company/akkara"><img src="../static/linkedin (1).png"></a>
+                    <a href="#"><img src="../static/twitter (1).png"></a>
+                    <a href="https://youtube.com/channel/UCoC-Un_SZmiJrLTJ2maYuDg"><img src="../static/youtube (1).png"></a>
+
+
+
+                </ul>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved | Akkara
+            </h4>
+        </div>
+        <!-- <div class="move-up">
+            <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        </div> -->
+    </footer>
+</body>
+
+</html>

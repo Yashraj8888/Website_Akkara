@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oregano&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Add a gray background color with some padding */
+        
+        body {
+            font-family: Arial;
+            padding: 3vw;
+            background: #f1f1f1;
+            background-image: url('C:/Users/hensi/OneDrive/Documents/vs_code/Akkara_blog_layout/source/background_4.jpg');
+        }
+        /* Header/Blog Title */
+        
+        .header {
+            padding: 3vw;
+            font-size: 3vw;
+            font-family: 'Kanit', sans-serif;
+            text-align: left;
+            background: rgba(83, 156, 112, 0.78);
+            color: black;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 2.5vw;
+        }
+        /* Fake image */
+        
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 2vw;
+        }
+        /* Add a card effect for articles */
+        
+        .card {
+            background: rgba(83, 156, 112, 0.78);
+            padding: 2vw;
+            margin-top: 2vw;
+        }
+        /* Clear floats after the columns */
+        
+        p {
+            font-size: 1.3vw;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 2.2vw;
+            text-align: center;
+            background: rgba(83, 156, 112, 0.78);
+            margin-top: 2.2vw;
+        }
+        
+        h5 {
+            font-size: 2.3vw;
+            font-family: 'Tangerine', cursive;
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-family: 'Courgette', cursive;
+            font-size: 2.5vw;
+        }
+        
+        h3 {
+            font-family: 'Courgette', cursive;
+            font-size: 2vw;
+        }
+        
+        h1 {
+            font-family: 'Oregano', cursive;
+            font-size: 4.3vw;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Style inputs */
+        
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 1vw;
+            border: 0.5vw solid #ccc;
+            margin-top: 0.75vw;
+            margin-bottom: 0.75vw;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #5e6460;
+            color: white;
+            padding: 1vw 1vw;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #5e6460;
+        }
+        /* Style the container/contact section */
+        
+        .container {
+            border-radius: 1vw;
+            background: rgba(83, 156, 112, 0.78);
+            padding: 1vw;
+        }
+        /* Create two columns that float next to eachother */
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 1.3vw;
+            padding: 1vw;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Blog Name</h1>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <img src="C:\Users\hensi\OneDrive\Documents\vs_code\Akkara_blog_layout\source\nutrition.jpg" style=" height:19vw; width:100% "></img>
+                <h5>What is Lorem Ipsum?</h5>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                    at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
+                    web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                    purpose (injected humour and the like).
+                </p>
+                <h5>Where does it come from? </h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                    looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+                    1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
+                    dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham
+                </p>
+            </div>
+        </div>
+        <div class="rightcolumn ">
+            <div class="card ">
+                <h3>About Me</h3>
+                <div class="fakeimg " style="height:9vw; ">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card ">
+                <h3>Popular Post</h3>
+                <div class="fakeimg ">Image</div><br>
+                <div class="fakeimg ">Image</div><br>
+                <div class="fakeimg ">Image</div>
+            </div>
+            <div class="card ">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <div class="container">
+
+            <div class="row">
+                <div class="column">
+                    <img id=" contact" src="C:\Users\hensi\OneDrive\Documents\vs_code\Akkara_blog_layout\source\contact_us.jpg" style="width:100%;">
+                </div>
+                <div class="column">
+                    <form id="Contact" method="POST" action="#">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="country">Where are you from?</label>
+                        <input type="text" id="Cname" name="place" placeholder="Country/place">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:9vw"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

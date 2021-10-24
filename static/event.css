@@ -149,6 +149,74 @@ a {
 }
 
 
+/* -----------------------------------navbar responsive------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    .nav .nav-brand img {
+        filter: invert(1);
+    }
+    .nav .social-items img {
+        filter: invert(1);
+    }
+    .nav-menu {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .openmenu {
+        z-index: 10;
+        color: white;
+    }
+    .nav .nav-menu .nav-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav .nav-items .nav-links:hover {
+        background-color: black;
+    }
+    .nav .nav-items .nav-links a:hover {
+        color: #8790b1;
+    }
+    .vis-items {
+        opacity: 0;
+        height: 10px;
+    }
+    .vis-socials {
+        display: none;
+    }
+    /* .vis-nav {
+        height: 50px;
+        transition: height 10s ease-in-out;
+    } */
+    .openmenu {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        display: block;
+    }
+    .nav-links a {
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-brand a {
+        color: white;
+    }
+    .social-items a {
+        color: white;
+    }
+}
+
+
+/* --------------X-------------navbar-------------X--------------- */
+
+
 /* --------------X-------------navbar-------------X--------------- */
 
 
@@ -167,14 +235,14 @@ a {
     margin: 50px 160px 100px 160px;
 }
 
-.vid1 video {
+.audio {
     height: fit-content;
     width: 500px;
     border-radius: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
-.vid1 {
+.audio {
     margin-right: 30px;
 }
 
@@ -204,6 +272,15 @@ a {
 
 
 /* -----------------------------footer-------------------------------------- */
+
+.footer .form-element .btn {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.footer .form-element .btn:hover {
+    color: white;
+}
 
 footer.footer {
     height: 100%;
